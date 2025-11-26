@@ -1,83 +1,243 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inicio - NexoU</title>
-    
-    <link rel="stylesheet" href="/src/css/inicio.css">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
 
+    <link rel="stylesheet" href="/src/css/inicio.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <aside class="menu-lateral">
-        
-        <header class="menu-lateral-cabecera">
-            <img src="/src/images/logo-nexou.png" alt="Logo Nexo" class="menu-lateral-logo">
-        </header>
-        
-        <nav class="menu-lateral-navegacion">
-            <ul class="menu-lateral-lista">
-                <li class="menu-lateral-item menu-lateral-item-activo">
-                    <a href="./inicio.html" class="menu-lateral-enlace">
-                        <img src="/src/images/icono-inicio.png" alt="" class="menu-lateral-icono-perfil">
-                        <p>Inicio</p>
-                    </a>
-                </li>
-                <li class="menu-lateral-item">
-                    <a href="./recursos-biblioteca.html" class="menu-lateral-enlace">
-                        <img src="/src/images/icono-libro-cerrado.png" alt="" class="menu-lateral-icono">
-                        <p>Biblioteca</p>
-                    </a>
-                </li>
-                <li class="menu-lateral-item">
-                    <a href="./recursos-tecnologicos.html" class="menu-lateral-enlace">
-                        <img src="/src/images/icono-laptop.png" alt="" class="menu-lateral-icono">
-                        <p>Tecnología</p>
-                    </a>
-                </li>
-                <li class="menu-lateral-item">
-                    <a href="./mis-reservas.html" class="menu-lateral-enlace menu-lateral-enlace-con-notificacion">
-                        <img src="/src/images/icono-calendario.png" alt="" class="menu-lateral-icono">
-                        <p>Reservas</p>
-                        <strong class="menu-lateral-notificacion">3</strong>
-                    </a>
-                </li>
-                <li class="menu-lateral-item">
-                    <a href="./perfil.html" class="menu-lateral-enlace">
-                        <img src="/src/images/icono-perfil.png" alt="" class="menu-lateral-icono">
-                        <p>Perfil</p>
-                    </a>
-                </li>
-                <li class="menu-lateral-item">
-                    <a href="./soporte.html" class="menu-lateral-enlace">
-                        <img src="/src/images/icono-soporte.png" alt="" class="menu-lateral-icono">
-                        <p>Soporte</p>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        
-        <footer class="menu-lateral-pie">
-            <figure class="menu-lateral-usuario-actual">
-                <img src="/src/images/imagen-perfil.png" alt="Avatar de perfil" class="menu-lateral-usuario-avatar">
-                <figcaption class="menu-lateral-usuario-info">
-                    <p class="menu-lateral-usuario-nombre">Maria E. Gónzalez</p>
-                    <p class="menu-lateral-usuario-rol">Estudiante activo</p>
-                </figcaption>
-            </figure>
-            
-            <a href="../../index.html" class="menu-lateral-cerrar-sesion">
-                <img src="/src/images/icono-cerrar-sesion.png" alt="" class="menu-lateral-icono-cerrar-sesion">
-                <p class="menu-lateral-cerrar-sesion-parrafo">Cerrar Sesión</p>
+      <header class="menu-lateral-cabecera">
+        <img
+          src="/src/images/logo-nexou.png"
+          alt="Logo Nexo"
+          class="menu-lateral-logo"
+        />
+      </header>
+
+      <nav class="menu-lateral-navegacion">
+        <ul class="menu-lateral-lista">
+          <li class="menu-lateral-item menu-lateral-item-activo">
+            <a href="./inicio.html" class="menu-lateral-enlace">
+              <img
+                src="/src/images/icono-inicio.png"
+                alt=""
+                class="menu-lateral-icono-perfil"
+              />
+              <p>Inicio</p>
             </a>
-        </footer>
+          </li>
+          <li class="menu-lateral-item">
+            <a href="./recursos-biblioteca.html" class="menu-lateral-enlace">
+              <img
+                src="/src/images/icono-libro-cerrado.png"
+                alt=""
+                class="menu-lateral-icono"
+              />
+              <p>Biblioteca</p>
+            </a>
+          </li>
+          <li class="menu-lateral-item">
+            <a href="./recursos-tecnologicos.html" class="menu-lateral-enlace">
+              <img
+                src="/src/images/icono-laptop.png"
+                alt=""
+                class="menu-lateral-icono"
+              />
+              <p>Tecnología</p>
+            </a>
+          </li>
+          <li class="menu-lateral-item">
+            <a
+              href="./mis-reservas.html"
+              class="menu-lateral-enlace menu-lateral-enlace-con-notificacion"
+            >
+              <img
+                src="/src/images/icono-calendario.png"
+                alt=""
+                class="menu-lateral-icono"
+              />
+              <p>Reservas</p>
+              <strong class="menu-lateral-notificacion">3</strong>
+            </a>
+          </li>
+          <li class="menu-lateral-item">
+            <a href="./perfil.html" class="menu-lateral-enlace">
+              <img
+                src="/src/images/icono-perfil.png"
+                alt=""
+                class="menu-lateral-icono"
+              />
+              <p>Perfil</p>
+            </a>
+          </li>
+          <li class="menu-lateral-item">
+            <a href="./soporte.html" class="menu-lateral-enlace">
+              <img
+                src="/src/images/icono-soporte.png"
+                alt=""
+                class="menu-lateral-icono"
+              />
+              <p>Soporte</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <footer class="menu-lateral-pie">
+        <figure class="menu-lateral-usuario-actual">
+          <img
+            src="/src/images/imagen-perfil.png"
+            alt="Avatar de perfil"
+            class="menu-lateral-usuario-avatar"
+          />
+          <figcaption class="menu-lateral-usuario-info">
+            <p class="menu-lateral-usuario-nombre">Maria E. Gónzalez</p>
+            <p class="menu-lateral-usuario-rol">Estudiante activo</p>
+          </figcaption>
+        </figure>
+
+        <a href="../../index.html" class="menu-lateral-cerrar-sesion">
+          <img
+            src="/src/images/icono-cerrar-sesion.png"
+            alt=""
+            class="menu-lateral-icono-cerrar-sesion"
+          />
+          <p class="menu-lateral-cerrar-sesion-parrafo">Cerrar Sesión</p>
+        </a>
+      </footer>
     </aside>
+    <!-- Contenido Principal -->
+    <main class="main-content">
+      <!-- Banner/Hero -->
+      <section class="baner">
+        <h1>Reserva Fácil y Rápida</h1>
+        <p>
+          Accede a libros y equipos tecnológicos de manera sencilla. Reserva
+          recursos académicos desde tu dispositivo en cualquier momento con la
+          plataforma más intuitiva y completa.
+        </p>
+        <div class="baner-botones">
+          <button class="baner-boton-biblioteca">
+            <a href="./recursos-biblioteca.html">Ver Biblioteca</a>
+          </button>
+          <button class="baner-boton-tecnologia">
+            <a href="./recursos-tecnologicos.html">Ver Tecnología</a>
+          </button>
+        </div>
+      </section>
 
-    
+      <!-- Stats -->
+      <section class="Stats">
+        <article class="Stat-Card">
+          <p class="star-card-number">156</p>
+          <p class="Star-card-title">Recursos Disponibles</p>
+        </article>
+        <article class="Stat-Card">
+          <p class="star-card-number">3</p>
+          <p class="Star-card-title">Reservas activas</p>
+        </article>
+        <article class="Stat-Card">
+          <p class="star-card-number">2h</p>
+          <p class="Star-card-title">Tiempo promedio</p>
+        </article>
+        <article class="Stat-Card">
+          <p class="star-card-number">+15%</p>
+          <p class="Star-card-title">Estudiantes</p>
+        </article>
+      </section>
 
-</body>
+      <!-- Recursos Populares -->
+      <section class="content-recursos-populares">
+        <h2>Recursos populares</h2>
+        <article class="content-pupulares">
+          <img
+            src="https://via.placeholder.com/70"
+            alt="Laptops Institucionales"
+            class="content-populares-imagen"
+          />
+          <div class="content-populares-info-populares">
+            <h3>Laptops Institucionales</h3>
+            <p>
+              Una laptop es un computador portátil ligero y versátil diseñado
+              para trabajar, estudiar o entretenerse en cualquier lugar.
+            </p>
+            <button class="content-populares-bot-disponible"></button>
+          </div>
+          <button class="content-populares-bot-ver"></button>
+        </article>
+        <article class="content-pupulares">
+          <img
+            src="https://via.placeholder.com/70"
+            alt="Libros"
+            class="content-populares-imagen"
+          />
+          <div class="content-populares-info-populares">
+            <h3>Libros institucionales</h3>
+            <p>
+              Un libro es una obra escrita que reúne ideas, historias o
+              conocimientos organizados en páginas, diseñada para informar,
+              entretener o inspirar al lector.
+            </p>
+            <button class="content-populares-bot-disponible"></button>
+          </div>
+          <button class="content-populares-bot-ver"></button>
+        </article>
+      </section>
+
+      <!-- Calendar -->
+      <section class="calendar">
+        <h3>Calendario</h3>
+        <img src="../images/Calendario.png" alt="Calendario" />
+      </section>
+
+      <!-- Próximas Reservas -->
+      <section class="proximas-reservas">
+        <h3>Próximas reservas</h3>
+        <article class="reserva-item">
+          <div>
+            <h4>MacBook Pro</h4>
+            <p>Mañana 10:00</p>
+          </div>
+          <button>Confirmada</button>
+        </article>
+        <article class="reserva-item">
+          <div>
+            <h4>Sala de Conferencias</h4>
+            <p>Mañana 10:00</p>
+          </div>
+          <button>Pendiente</button>
+        </article>
+        <article class="reserva-item">
+          <div>
+            <h4>Proyecto Épson</h4>
+            <p>23 Sep 10:00</p>
+          </div>
+          <button>Confirmada</button>
+        </article>
+      </section>
+
+      <!-- Anuncios Importantes -->
+      <section class="Anuncios-importantes">
+        <h2>Anuncios importantes</h2>
+        <article class="Anuncios-importantes-articulo">
+          <h4>Mantenimiento Programado</h4>
+          <p>Interrupción breve el 23 de Septiembre de 2:00 AM a 4:00 AM</p>
+        </article>
+        <article class="Anuncios-importantes-articulo">
+          <h4>Nuevos Recursos</h4>
+          <p>Se han agregado 15 nuevos tablets disponibles para reserva</p>
+        </article>
+      </section>
+    </main>
+  </body>
 </html>

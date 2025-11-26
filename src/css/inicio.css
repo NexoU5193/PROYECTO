@@ -1,206 +1,275 @@
+/* --- Importación de Google Fonts --- */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+/* --- Reseteo Básico y Estilos Globales --- */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-html,
-body {
-  height: 100%;
-  font-family: "Poppins", "Montserrat", sans-serif;
-  background-color: #f9fafb;
-  color: #011a42;
+html, body {
+    height: 100%;
+    font-family: 'Poppins', 'Montserrat', 'Avenir Next Arabic', 'Mukti', sans-serif;
+    background-color: #F9FAFB; /* --color-fondo-app */
+    color: #011A42; /* --color-texto-principal */
 }
 
 ul {
-  list-style: none;
+    list-style: none;
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
 
 button {
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  font-family: inherit;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-family: inherit;
 }
 
 img {
-  max-width: 100%;
-  display: block;
-}
-
-body {
-  display: flex;
-  min-height: 100vh;
+    max-width: 100%;
+    display: block;
 }
 
 /* ==============================================
-        ESTILOS DEL MENÚ LATERAL (ASIDE)
-        ============================================== */
+ESTILOS DEL MENÚ LATERAL (ASIDE)
+==============================================
+*/
 
 /* --- Contenedor Principal del Menú --- */
 .menu-lateral {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 300px;
-  height: 100%;
-  background-color: #ffffff;
-  border-right: 1px solid #e5e7eb;
-  display: flex;
-  flex-direction: column;
-  padding: 32px 24px;
-  overflow-y: auto;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #FFFFFF; /* --blanco */
+    border-right: 1px solid #E5E7EB; /* --color-borde */
+    
+    display: flex;
+    flex-direction: column;
+    padding: 32px 24px;
 }
 
 /* --- Cabecera (Logo) --- */
 .menu-lateral-cabecera {
-  margin-bottom: 40px;
-  padding-left: 8px;
+    margin-bottom: 40;
+    padding-left: 8px;
 }
 
 .menu-lateral-logo {
-  width: 80px;
-  height: 80px;
-  object-fit: contain;
-  border-radius: 50%;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    width: 80px;
+    height: 80px;
+    background-color: #CFCFCF; /* --gris-metalico-claro */
+    padding: 0;
+    border-radius: 50%;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
 }
 
 /* --- Navegación (Enlaces) --- */
 .menu-lateral-navegacion {
-  flex-grow: 1;
+    flex-grow: 1;
 }
 
 .menu-lateral-lista {
-  border-top: 1px solid #e5e7eb;
-  margin-top: 20px;
-  padding-top: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
+    border-top: 1px solid #E5E7EB;
+    margin-top: 60px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 
-.menu-lateral-item {
-  width: 100%;
 }
 
 .menu-lateral-enlace {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  padding: 13px 16px;
-  border-radius: 8px;
-  font-weight: 500;
-  color: #6b7280;
-  font-size: 15px;
-  transition: all 0.2s ease;
-  width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 14px; /* Espacio entre el icono y el texto */
+    padding: 13px 16px;
+    border-radius: 8px;
+    font-weight: 500;
+    color: #011A42; /* --color-texto-secundario */
+    font-size: 15px;
+    transition: background-color 0.2s, color 0.2s;
 }
 
-.menu-lateral-icono,
-.menu-lateral-icono-perfil {
-  width: 20px;
-  height: 20px;
-  object-fit: contain;
+/*
+ * ==== ¡NUEVA REGLA! ====
+ * Placeholder para los iconos del menú
+ */
+.menu-lateral-icono {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) saturate(100%) invert(15%) sepia(100%) saturate(600%) hue-rotate(200deg);
+    /* Color temporal para ver el espacio */
+   
+    
+}
+
+.menu-lateral-icono-tecnologia{
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+    /* Color temporal para ver el espacio */
+    
+}
+
+.menu-lateral-icono-perfil{
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1)
+
+}
+
+.menu-lateral-icono-cerrar-sesion {
+ width: 20px;
+ height: 20px;
 }
 
 .menu-lateral-enlace:hover {
-  background-color: #f9fafb;
+    background-color: #F9FAFB; /* --color-fondo-app */
 }
 
 .menu-lateral-item-activo .menu-lateral-enlace {
-  background-color: #011a42;
-  color: #ffffff;
+    background-color: #011A42; /* --azul-marino-oscuro */
+    color: #FFFFFF; /* --blanco */
+}
+
+/* Icono activo (se vuelve blanco) */
+.menu-lateral-item-activo .menu-lateral-icono {
+    background-color: #FFFFFF; /* --blanco */
 }
 
 .menu-lateral-enlace-con-notificacion {
-  position: relative;
+    position: relative;
 }
 
 .menu-lateral-notificacion {
-  position: absolute;
-  right: 16px;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: #d49d28;
-  color: #aa700f;
-  font-size: 12px;
-  font-weight: 600;
-  border-radius: 6px;
-  padding: 2px 8px;
-  min-width: 20px;
-  text-align: center;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #D49D28; /* --mostaza-dorado */
+    color: #AA700F; /* --marron-tierra */
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 6px;
+    padding: 2px 6px;
 }
 
 /* --- Pie de Menú (Usuario y Cerrar Sesión) --- */
 .menu-lateral-pie {
-  border-top: 1px solid #e5e7eb;
-  padding-top: 24px;
-  margin-top: auto;
+    border-top: 1px solid #E5E7EB; /* --color-borde */
+    padding-top: 24px;
+    
 }
 
 .menu-lateral-usuario-actual {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 16px;
-  padding: 17px;
-  background: linear-gradient(135deg, #f8cd86 0%, #f5b95f 100%);
-  border-radius: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    background-color: #F8CD86;
+    padding: 17px;
+    border-radius: 16px;
+    opacity: 0.3;
 }
 
 .menu-lateral-usuario-avatar {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  object-fit: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover
+    
 }
 
 .menu-lateral-usuario-info {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 .menu-lateral-usuario-nombre {
-  font-weight: 600;
-  color: #011a42;
-  margin-bottom: 2px;
+    font-weight: 600;
+    color: #011A42; /* --color-texto-principal */
 }
 
 .menu-lateral-usuario-rol {
-  color: #6b7280;
-  font-size: 13px;
+    color: #6B7280; /* --color-texto-secundario */
+    font-size: 13px;
 }
 
 .menu-lateral-cerrar-sesion {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  padding: 8px 16px;
-  border-radius: 8px;
-  transition: background-color 0.2s;
-}
-
-.menu-lateral-icono-cerrar-sesion {
-  width: 20px;
-  height: 20px;
-  object-fit: contain;
-}
-
-.menu-lateral-cerrar-sesion-parrafo {
-  color: #bd2222;
-  font-weight: 500;
-  font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 14px; /* Espacio para el icono */
+    color: #6B7280; /* --color-texto-secundario */
+    font-weight: 500;
+    font-size: 15px;
+    padding: 8px 16px;
+    border-radius: 8px;
 }
 
 .menu-lateral-cerrar-sesion:hover {
-  background-color: #fee2e2;
+    background-color: #F9FAFB; /* --color-fondo-app */
 }
 
+.menu-lateral-cerrar-sesion-parrafo {
+    color: #BD2222;
+}
+
+/* ==============================================
+ESTILOS DEL CONTENIDO PRINCIPAL (MAIN)
+==============================================
+*/
+
+.contenido-principal {
+    margin-left: 300px;
+    padding: 40px 56px;
+}
+
+.contenido-cabecera {
+    margin-bottom: 32px;
+}
+
+.contenido-cabecera-titulo {
+    font-size: 34px;
+    font-weight: 700;
+    color: #011A42; /* --azul-marino-oscuro */
+    margin-bottom: 4px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contenido-cabecera-subtitulo {
+    font-size: 16px;
+    font-weight: 400;
+    color: #6B7280; /* --color-texto-secundario */
+}
+
+
+
+/* --- Layout de Columnas --- */
+.perfil-columnas {
+    display: flex;
+    gap: 32px;
+    align-items: flex-start;
+}
+
+.perfil-columna-izquierda {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    max-width: 360px;
+}
+
+.perfil-columna-derecha {
+    flex: 2;
+}
 /* ==============================================
         ESTILOS DEL CONTENIDO PRINCIPAL (MAIN)
         ============================================== */
